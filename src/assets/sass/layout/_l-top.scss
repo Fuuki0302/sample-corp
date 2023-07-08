@@ -1,0 +1,51 @@
+@use  "../global" as global;
+
+
+.l-top{
+@include global.mq('pc') {
+    height: 648px;
+    }
+    @include global.mq('tab') {
+    background-size: cover;
+    }
+
+    background-image: url(../img/mv.png);
+    height: 667px;
+    background-size: cover;
+    background-position: 22% center;
+}
+
+.l-top__inner{
+    width: 100%;
+
+    @include global.mq('pc') {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+    }
+
+}
+
+.l-top__content{
+    padding-top: 227px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+
+    @include global.mq('pc') {
+    width: 600px;
+    padding-top: 230px;
+    margin-left: auto;
+    }
+
+}
+
+.top-btn {
+text-align: start;
+
+@include global.mq('sp') {
+    text-align: center;
+}
+}
+

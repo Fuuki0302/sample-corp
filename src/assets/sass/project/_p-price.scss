@@ -1,0 +1,82 @@
+@use  "../global" as global;
+
+
+.p-price__table{
+    margin-top: 52px;
+    text-align: center;
+    border-collapse: collapse;
+    border: solid 1px #707070;
+    width: 100%;
+
+    @include global.mq('sp') {
+        margin-top: 30px;
+    }
+}
+
+.p-price__ttl {
+    white-space: nowrap;
+    font-family: global.$font-en;
+    font-weight: 600;
+    text-align: center;
+    color: #FFF;
+    background: #3e3e3e;
+    width: 29.3%;
+    font-size: 18px;
+    
+    @include global.mq('sp') {
+    padding: 0.9em 20px;
+    }
+    
+
+    @include global.mq('pc') {
+    width: 27.3%;
+    padding: 0.5em 1.6em;
+    font-size: 24px;
+    }    
+}
+
+.p-price__txt {
+    white-space: nowrap;
+    font-family: global.$font-en;
+    font-weight: 600;
+    color: #3e3e3e;
+    background: #fff;
+    border-bottom: 1px solid #000;
+    width: 343px;
+    font-size: 18px;
+    
+    
+    @include global.mq('sp') {
+    padding: 0.9em 20px;
+    
+    }
+    
+    
+    
+    @include global.mq('pc') {
+    width: 698px;
+    padding: 0.5em 1.6em;
+    font-size: 24px;
+    }
+
+}
+
+
+.p-price_items:not(:first-child) {
+    th {
+        border-top: 1px solid #fff;
+    }
+
+    td {
+        border-top: 1px solid #707070;
+    }
+
+}
+
+
+.p-price__des{
+    margin-top: 11px;
+    font-size: 12px;
+    font-family: global.$font-ja;
+
+}

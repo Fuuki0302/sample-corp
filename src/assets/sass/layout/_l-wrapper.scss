@@ -1,0 +1,42 @@
+@use  "../global" as global;
+
+
+/* 背景色
+
+====================================================*/
+.l-bg-wrapper  {
+position: relative;
+z-index: 1;
+
+&:before {
+    background: #3e3e3e;
+    bottom: 0;
+    content: '';
+    display: block;
+    left: 0;
+    position: absolute;
+    top: 58px;
+    width: 100%;
+    
+
+
+    @include global.mq('pc') {
+    bottom: 158px;
+    top: 146px;
+    width: 76.5625%;
+    }
+    @include global.mq('tab') {
+    bottom: -98px;
+    top: 146px;
+    width: 100%;
+
+    }
+    @include global.mq('sp') {
+    bottom: -60px;
+    top: 146px;
+    width: 100%;
+    }
+
+
+}
+}

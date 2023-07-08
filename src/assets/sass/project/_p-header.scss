@@ -1,0 +1,320 @@
+@use  "../global" as global;
+
+// .p-header__img{
+// &:hover {
+//     opacity: 0.7;
+//     }
+//     img {
+
+//     width: 200px;
+
+//     @include global.mq('sp') {
+//         width: 150px;
+//     }
+
+//     @include global.mq('sp-down') {
+//         width: 120px;
+//     }
+//     }
+
+// }
+
+
+// .p-header-img__first.is-show {
+//     display: none;
+
+// }
+
+// .p-header-img__second{
+//     display: none;
+
+// }
+// .p-header-img__second.is-show{
+//     display: flex;
+
+// }
+
+// .p-header__nav{
+//     @include global.mq('pc') {
+//         display: flex;
+//         align-items: center;
+//         line-height: 16px;
+//         margin-left: 6.2%;
+
+//     }
+//     @include global.mq('tab') {
+//         display: flex;
+//         align-items: center;
+//         line-height: 16px;
+//         margin-left: 8%;
+//     }
+
+//         display: none;
+
+// }
+
+// .p-header__nav--list{
+//     align-items: center;
+
+// @include global.mq('pc') {
+//     display: flex;
+// }
+// @include global.mq('tab') {
+//     display: flex;
+// }
+
+// }
+
+// .p-header__nav--item{
+//     margin-right: 32px;
+
+//     &:last-child {
+//         margin-right: 0;
+//     }
+
+// }
+
+// .p-header-navLink{
+//     color: #fff;
+//     font-size: 16px;
+//     font-family: global.$font-ja;
+//     font-weight: 800;
+
+//     &:hover {
+//     opacity: .7;
+//     }
+
+// }
+// .p-header-navLink.is-show {
+//     color: #3e3e3e;
+// }
+
+
+// .p-header-right{
+//     margin-left: auto;
+//     &:hover {
+//         opacity: .8;
+//     }
+
+// }
+
+// .js-modal-open{
+//     font-size: 16px;
+//     font-family: global.$font-ja;
+//     padding-top: 15px;
+//       padding-left: 71px;
+//       width: 170px;
+//       height: 54px;
+//       font-weight: 800;
+//       color:#FFFFFF;
+//       display:inline-block;
+
+//       background:#978F10;
+//       position: relative;
+
+//       @include global.mq('sp')   {
+//         width: 107px;
+//         height: 28px;
+//         font-size: 14px;
+//         font-weight: 800;
+//         padding-left: 38px;
+//         padding-top: 3px;
+//       }
+
+//       @include global.mq('sp-down') {
+//         width: 107px;
+//         height: 28px;
+//         font-size: 14px;
+//         font-weight: 800;
+//         padding-left: 38px;
+//         padding-top: 3px;
+
+//       }
+
+//       &::before {
+//         position: absolute;
+//         content: "";
+//         background: url(../img/calender.png);
+//         width: 22px;
+//         height: 22px;
+//         top: 50%;
+//         right: 70%;
+//         transform: translateY(-50%);
+
+//       }
+
+// }
+
+
+// .p-header__burger{
+
+//     @include global.mq('sp') {
+//         width: 35px;
+//       height: 100%;
+//       display: block;
+
+//     }
+//     @include global.mq('sp-down') {
+//         width: 35px;
+//       height: 100%;
+//       display: block;
+//       margin-left: 15px;
+
+//     }
+
+
+// }
+// .p-header__burger.is-active {
+//     right: 0;
+
+// }
+
+// .p-header__burger--inline {
+//     @include global.mq('sp') {
+//         width: 100%;
+//         height: 2px;
+//         background-color: #efefef;
+//         position: relative;
+//         transition: ease .4s;
+//         display: block;
+        
+//         &:nth-child(1) {
+//           top: 0;
+//         }
+        
+//         &:nth-child(2) {
+//           margin: 8px 0;
+//         }
+        
+//         &:nth-child(3) {
+//           top: 0;
+//         }
+//     }
+//     @include global.mq('sp-down') {
+//         width: 100%;
+//         height: 2px;
+//         background-color: #efefef;
+//         position: relative;
+//         transition: ease .4s;
+//         display: block;
+        
+//         &:nth-child(1) {
+//           top: 0;
+//         }
+        
+//         &:nth-child(2) {
+//           margin: 8px 0;
+//         }
+        
+//         &:nth-child(3) {
+//           top: 0;
+//         }
+//     }
+
+// }
+// .p-header__burger--inline.is-show{
+//     background-color: #3e3e3e;
+// }
+// /* ハンバーガーメニュークリック後のスタイル */
+// .p-header__burger.is-active {
+//     transform: translateX(0);
+//   }
+  
+//   .p-header__burger.is-active span:nth-child(1) {
+//     top: 7px;
+//     transform: rotate(45deg);
+//   }
+  
+//   .p-header__burger.is-active span:nth-child(2) {
+//     opacity: 0;
+  
+//   }
+  
+//   .p-header__burger.is-active span:nth-child(3) {
+//     top: -13px;
+//     transform: rotate(-45deg);
+//   } 
+
+// .p-drawer__nav{
+//     font-family: global.$font-ja;
+//     @include global.mq('tab') {
+//         display: none;  
+//       }
+//       @include global.mq('pc') {
+//         display: none;  
+//       }
+//       @include global.mq('sp') {
+//         position: fixed;
+//         background-color: #fff;
+//         right: -100%;
+//         width: 70%;
+//         top: 50px;
+//         height: 100vh;
+//         z-index: 0;
+//         transition: all 0.5s;
+//         overflow-y: auto; 
+//         opacity: 0.9;
+      
+//       }
+//       @include global.mq('sp-down') {
+//         position: fixed;
+//         background-color: #fff;
+//         right: -100%;
+//         width: 70%;
+//         top: 50px;
+//         height: 100vh;
+//         z-index: 0;
+//         transition: all 0.5s;
+//         overflow-y: auto; 
+//         opacity: 0.9;   
+      
+//       }
+
+// }
+// .p-drawer__nav.is-active {
+//     right: 0;
+
+// }
+
+// .p-drawer__nav--list{
+//     @include global.mq('sp') {
+//         text-align: center;
+//     }
+//     @include global.mq('sp-down') {
+//         text-align: center;
+
+//     }
+
+// }
+
+// .p-drawer__nav--item{
+//     @include global.mq('sp') {
+//         margin-top: 60px;
+//         padding-top: 50px;
+
+//     }
+//     @include global.mq('sp-down') {
+//         margin-top: 60px;
+//         padding-top: 15px;
+
+//     }
+
+// }
+
+// .p-drawer-nav--link{
+//     @include global.mq('sp') {
+//         color: #3e3e3e;
+//         font-size: 24px;
+//         font-weight: 600;
+//     }
+//     @include global.mq('sp-down') {
+//         color: #3e3e3e;
+//         font-size: 18px;
+//         font-weight: 600;
+//     }
+
+// }
+
+// .p-header__overlay{
+
+// }

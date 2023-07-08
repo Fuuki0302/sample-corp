@@ -1,0 +1,36 @@
+
+/* colorの設定
+
+====================================================*/
+$color-txt : #3e3e3e;
+$color-white: #fff;
+$color-yellow: #ffaa3b;
+$color-yellow-action: #F18900;
+$color-blue: #3b69ff;
+$color-red: #ff4646;
+
+
+/* font-familyの設定
+
+====================================================*/
+$font-en: "Montserrat", sans-serif;
+$font-ja: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "Droid Sans", sans-serif;
+
+
+
+
+/* ブレークポイントの設定
+
+====================================================*/
+$layout-width-canvas: 1280px;
+$layout-width-inner: 1200px;
+$breakpoints: (
+	"sp-down": "(max-width: 415px)",
+	"sp": "(max-width: 767px)",
+	"tab": "(max-width: 1024px)",
+	"pc-down": "(max-width: 1200px)",
+	"pc": "(min-width: 768px)",
+	"tab-down": "(max-width: #{$layout-width-inner - 1px})",
+	"tab-up": "(min-width: #{$layout-width-inner})",
+	"retina": "only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx)",
+);

@@ -1,0 +1,490 @@
+@use  "../global" as global;
+
+
+.p-contact_btn--wrapper{
+    text-align: center;
+}
+
+
+.p-contact__header{
+
+    background-color: #000;
+    box-shadow: 0 0 4px #3e3e3e;
+    padding: 32px 16px;
+    position: relative;
+
+    @include global.mq('pc') {
+    padding: 58px 0 62px;
+    }
+
+    @include global.mq('sp') {
+        padding-top: 38px;
+        padding-bottom: 38px;
+    }
+    &:before {
+        background: url(../img/contact1.png) center (center / cover) no-repeat;
+        content: '';
+        display: block;
+        height: 100%;
+        left: 0;
+        opacity: .5;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+}
+
+
+.p-contact__header--txt{
+    color: #fff;
+    font-size: 14px;
+    margin-top: 4px;
+    text-align: center;
+    font-family: global.$font-ja;
+
+    @include global.mq('pc') {
+        font-size: 16px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    @include global.mq('sp') {
+        line-height: calc(20 / 14);
+        font-weight: 500;
+        text-align: center;
+    }
+    @include global.mq('sp-down') {
+    text-align: left;
+
+    }
+
+}
+
+
+.p-contact__item {
+    + .p-contact__item {
+        margin-top: 27px;
+
+		@include global.mq('sp') {
+			margin-top: 26px;
+		}
+
+		&.contact-item--radio {
+			margin-top: 26px;
+		}
+
+		&.contact-item--message {
+			margin-top: 26px;
+		}
+	}
+
+	&:not(.mod-message) {
+		@include global.mq('pc') {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+		}
+    }
+
+    input {
+    &[type="text"],
+    &[type="email"] {
+    border: none;
+    border-bottom: solid 1px #3e3e3e;
+    border-radius: 0;
+    font-size: 16px;
+        font-weight: 400;
+        font-family: inherit;
+    letter-spacing: .03em;
+    padding: 3px 12px 2px;
+    position: relative;
+        width: 100%;
+        color: #3e3e3e;
+
+        @include global.mq('pc') {
+            font-size: 16px;
+        }
+
+        @include global.mq('sp') {
+            padding-left: 0;
+            padding-right: 0;
+            padding-top: 1px;
+            padding-bottom: 1px;
+            font-size: 14px;
+        }
+    }
+
+
+    &[type="text"] {
+    font-family: global.$font-ja;
+    &:hover, &:focus {
+    border-color: #4973ff;
+    outline: none;
+    }
+    }
+
+    &[type="email"] {
+        font-family: global.$font-en;
+        &:hover,
+        &:focus {
+    border-color: #4973ff;
+    outline: none;
+    }
+    }
+
+    &[type="text"] {
+        &:hover,
+        &:focus {
+            + .contact-focusLine {
+                opacity: 1;
+            }
+    }
+    }
+
+    &[type="email"] {
+        &:hover,
+        &:focus {
+            + .contact-focusLine {
+                opacity: 1;
+            }
+    }
+    }
+
+    &[type="radio"] {
+    display: none;
+    vertical-align: text-top;
+    }
+    }
+
+    select {
+    appearance: none;
+    background: transparent;
+    border: none;
+    border: solid 1px #3e3e3e;
+    border-radius: 0;
+    color: #3e3e3e;
+    font-size: 16px;
+    font-family: inherit;
+    font-weight: 500;
+    height: 40px;
+    line-height: 40px;
+    outline: none;
+    padding: 0 34px 0 8px;;
+    transition: box-shadow .2s;
+
+    @include global.mq('pc') {
+        letter-spacing: 0.1em;
+
+        &:hover {
+            box-shadow: 0 0 4px #4973ff;
+        }
+    }
+
+    @include global.mq('sp') {
+        font-size: 14px;
+        line-height: 38px;
+        height: 38px;
+        width: 100%;
+    }
+
+    &::-ms-expand {
+    display: none;
+    }
+    }
+
+    textarea {
+    border: solid 1px #3e3e3e;
+    border-radius: 0;
+    font-size: 16px;
+    height: 160px;
+    margin-top: 3px;
+    outline: none;
+    padding: .5em;
+    resize: vertical;
+    transition: .2s;
+    width: 100%;
+
+    @include global.mq('pc') {
+        font-size: 21px;
+        height: 200px;
+
+        &:hover {
+            border-color: #4973ff;
+            box-shadow: 0 0 4px #4973ff;
+        }
+    }
+
+    @include global.mq('sp') {
+        margin-top: 12px;
+    }
+
+    &:focus {
+    border-color: #4973ff;
+    box-shadow: 0 0 4px #4973ff;
+    }
+}
+
+}
+
+
+.p-contact__item--ttl{
+    align-items: center;
+    display: flex;
+    flex: 0 0 188px;
+    font-weight: bold;
+    font-family: global.$font-ja;
+
+}
+
+.p-contact__content{
+    position: relative;
+    
+	@include global.mq('pc') {
+		flex: 0 1 100%;
+	}
+
+	@include global.mq('sp') {
+		margin-top: 3px;
+
+		.p-contact__item--radio & {
+			margin-top: 7px;
+		}
+	}
+
+
+}
+
+.p-contact__select-box {
+    position: relative;
+    &:after {
+        @include global.mq('pc') {
+            left: 160px;
+            top: 14px;
+        }
+        @include global.mq('sp') {
+            top: 14px;
+            right: 12px;
+        }
+        border-bottom: solid 2px #3e3e3e;
+        border-right: solid 2px #3e3e3e;
+        content: '';
+        display: block;
+        height: 8px;
+        position: absolute;
+        transform: rotate(45deg);
+        width: 8px;
+        }
+}
+
+
+.p-contact__requireLabel{
+    background: #ff4646;
+    border-radius: 2px;
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 16px;
+    margin-left: 12px;
+    padding: 0;
+    text-align: center;
+    width: 40px;
+    font-family: global.$font-ja;
+
+    @include global.mq('pc') {
+        font-size: 12px;
+        margin-left: 12px;
+        padding: 0;
+    }
+
+    @include global.mq('sp') {
+        margin-left: 20px;
+    }
+
+}
+
+
+.p-contact__radio{
+    display: inline-block;
+	padding: 0;
+
+	+ .contact-radio {
+		@include global.mq('pc') {
+			margin-left: 32px;
+		}
+
+		@include global.mq('sp') {
+			margin-left: 32px;
+		}
+	}
+
+}
+
+.p-contact__radioLabel{
+padding-left: 22px;
+position: relative;
+font-family: global.$font-ja;
+
+&:before {
+    background: #fff;
+    border: solid 1px #3e3e3e;
+    border-radius: 50%;
+    content: '';
+    display: block;
+    height: 12px;
+    left: 0;
+    position: absolute;
+    top: 2px;
+    transition: 0.2s;
+        width: 12px;
+
+        @include global.mq('pc') {
+            height: 12px;
+            top: 3px;
+            width: 12px;
+        }
+}
+
+    @include global.mq('pc') {
+        &:hover {
+            &::before {
+                border-color: #4973ff;
+                box-shadow: 0 0 4px #4973ff;
+            }
+        }
+
+        &:active {
+            &::before {
+                background-color: rgba(73, 115, 255, 0.2);
+                box-shadow: none;
+            }
+        }
+    }
+
+&:after {
+    background: #4973ff;
+    border-radius: 50%;
+    content: '';
+    display: block;
+    height: 6px;
+    left: 3px;
+    opacity: 0;
+    position: absolute;
+    top: 5px;
+    transition: 0.2s;
+    width: 6px;
+
+    @include global.mq('pc') {
+        left: 3px;
+        top: 6px;
+    }
+}
+
+}
+
+.p-contact__privacy{
+    display: inline-block;
+	margin-top: 16px;
+
+	@include global.mq('pc') {
+		margin-top: 47px;
+	}
+
+	@include global.mq('sp') {
+		margin-top: 26px;
+	}
+
+}
+
+.p-contact__privacyLabel{
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+    padding-left: 38px;
+    position: relative;
+    font-weight: 700;
+    font-family: global.$font-ja;
+
+    @include global.mq('pc') {
+        font-size: 18px;
+        padding-left: 42px;
+    }
+
+    &:before {
+    background: #fff;
+    border: solid 1px #3e3e3e;
+    content: '';
+    display: block;
+    height: 16px;
+    left: 0;
+    position: absolute;
+    top: 0px;
+    transition: 0.2s;
+    width: 16px;
+
+    @include global.mq('pc') {
+        height: 20px;
+        width: 20px;
+    }
+
+    @include global.mq('sp') {
+        width: 18px;
+        height: 18px;
+    }
+    }
+
+    @include global.mq('pc') {
+        &:hover {
+            &::before {
+                border-color: #4973ff;
+                box-shadow: 0 0 4px #4973ff;
+            }
+        }
+
+        &:active {
+            &::before {
+                background-color: rgba(73, 115, 255, 0.2);
+                box-shadow: none;
+            }
+        }
+    }
+    @include global.mq('sp') {
+        &:hover {
+            &::before {
+                border-color: #4973ff;
+                box-shadow: 0 0 4px #4973ff;
+            }
+        }
+
+        &:active {
+            &::before {
+                background-color: rgba(73, 115, 255, 0.2);
+                box-shadow: none;
+            }
+        }
+    }
+
+&:after {
+    border-bottom: solid 2px #4973ff;
+    border-left: solid 2px #4973ff;
+    content: '';
+    display: block;
+    height: 6px;
+    left: 2px;
+    opacity: 0;
+    position: absolute;
+    top: 5px;
+    transform: rotate(-45deg);
+    transition: 0.2s;
+        width: 12px;
+
+        @include global.mq('pc') {
+            left: 4px;
+            top: 5px;
+        }
+
+        @include global.mq('sp') {
+            left: 3px;
+        }
+    }
+
+}

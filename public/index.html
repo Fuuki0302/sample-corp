@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="robots" content="noindex">
+    <title>最終課題</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+    
+    <!-- favicon/webclipicon -->
+    <link rel="icon" href="./assets/img/mv 2.png" />
+    
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    
+  </head>
+  <body>
+    <div class="l-wrapper">
+      <header class="l-header">
+        <div class="l-header__inner">
+          <div class="c-header__ttl">Sample Corp.</div>
+        </div>
+
+        <nav class="l-drawer" id="drawer">
+          
+          <ul class="l-drawer__nav--list l-header__list">
+            <li class="p-nav__item"><a class="p-nav__item--link" href="#news">News</a></li>
+            <li class="p-nav__item"><a class="p-nav__item--link" href="#service">Service</a></li>
+            <li class="p-nav__item"><a class="p-nav__item--link" href="#results">Results</a></li>
+            <li class="p-nav__item"><a class="p-nav__item--link" href="#price">Price</a></li>
+            <li class="p-nav__item"><a class="p-nav__item--link" href="#comments">Comments</a></li>
+            <li class="p-nav__item"><a class="p-nav__item--link" href="#faqs">FAQs</a></li>
+            <li class="p-nav__item"><a class="p-nav__item--link" href="#contact">Contact</a></li>
+          </ul>
+
+
+          <div class="l-global__nav">
+            <button class="p-nav__btn" id="nav-btn" type="button" aria-label="メニュー">
+              <span class="p-header__inline"></span>
+              <span class="p-header__inline"></span>
+              <span class="p-header__inline"></span>
+            </button>
+          </div>
+        </nav>
+
+        <div class="l-js__overlay"></div>
+      </header>
+
+
+
+      <div class="l-top">
+        <div class="l-top__inner">
+          <div class="l-top__content">
+            <div class="c-content__ttl">
+              詩が生れて、画が出来る。<br />
+              とかくに人の世は住みにくい。
+            </div>
+            <!-- /.content-ttl -->
+            <div class="c-content__txt">
+              どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。
+            </div>
+            <!-- /.content-txt -->
+            <div class="p-contact_btn--wrapper top-btn">
+              <a href="#" class="c-contact__btn"> お問い合わせしてみる </a>
+              <!-- /.contact-btn -->
+            </div>
+            <!-- /.contact-btn-wrapper -->
+          </div>
+          <!-- /.top-content-box -->
+        </div>
+        <!-- /.top-inner -->
+      </div>
+      <!-- /.top -->
+      <main class="main">
+        <section class="l-news" id="news">
+          <div class="l-news__inner">
+            <h2 class="c-news__ttl">News</h2>
+            <!-- /.news-ttl -->
+            <ul class="l-news__list">
+              <li class="p-news__list--item">
+                <a href="" class="p-news-item--link">
+                  <time class="p-news__item--date"> 2019-02-01 </time>
+                  <!-- /.p-news__item--date -->
+                  <div class="p-news__item--ttl">テキスト</div>
+                  <!-- /.p-news__item--ttl -->
+                  <p class="p-news__item--txt newsitem_one">
+                    ニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュース
+                  </p>
+                  <!-- /.p-news__item--txt -->
+                </a>
+              </li>
+              <!-- /.news-list-item -->
+              <li class="p-news__list--item">
+                <a href="" class="p-news-item--link l-news__item-link--next">
+                  <time class="p-news__item--date"> 2019-02-01 </time>
+                  <!-- /.p-news__item--date -->
+                  <div class="p-news__item--ttl">テキスト</div>
+                  <!-- /.p-news__item--ttl -->
+                  <p class="p-news__item--txt">
+                    ニュースニュースニュースニュースニュースニュースニュース
+                  </p>
+                  <!-- /.p-news__item--txt -->
+                </a>
+              </li>
+              <!-- /.news-list-item -->
+              <li class="p-news__list--item">
+                <a href="" class="p-news-item--link l-news__item-link--next">
+                  <time class="p-news__item--date"> 2019-02-01 </time>
+                  <!-- /.p-news__item--date -->
+                  <div class="p-news__item--ttl">テキスト</div>
+                  <!-- /.p-news__item--ttl -->
+                  <p class="p-news__item--txt">
+                    ニュースニュースニュースニュースニュースニュースニュース
+                  </p>
+                  <!-- /.p-news__item--txt -->
+                </a>
+              </li>
+              <!-- /.news-list-item -->
+            </ul>
+            <!-- /.news-list -->
+            <div class="p-news__btn--wrap">
+              <a href="" class="c-news__btn">MORE</a>
+              <!-- /.news-btn -->
+            </div>
+            <!-- /.news-btn-wrap -->
+          </div>
+          <!-- /.news-inner -->
+        </section>
+        <!-- /.news -->
+
+        <section class="l-service" id="service">
+          <h2 class="c-service__ttl">Service</h2>
+          <!-- /.section-ttl -->
+          <div class="l-service__inner">
+            <dl class="p-service__content">
+              <div class="p-service__list">
+                <dt class="p-serve__txt">
+                  WEB <br />
+                  DESIGN
+                </dt>
+                <dd class="p-serve__des">
+                  どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。
+                </dd>
+              </div>
+              <!-- /.service-list -->
+              <div class="p-service__list">
+                <dt class="p-serve__txt">
+                  WEB <br />
+                  CODING
+                </dt>
+                <dd class="p-serve__des">
+                  どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。
+                </dd>
+              </div>
+              <!-- /.service-list -->
+              <div class="p-service__list">
+                <dt class="p-serve__txt">
+                  CMS <br />
+                  CUSTOMIZE
+                </dt>
+                <dd class="p-serve__des"> 
+                  どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。
+                </dd>
+              </div>
+              <!-- /.service-list -->
+            </dl>
+            <!-- /.sectioncontent -->
+          </div>
+          <!-- /.section-inner -->
+        </section>
+        <!-- /.servise -->
+
+        <section class="l-results" id="results">
+          <h2 class="c-results__ttl">Results</h2>
+          <!-- Slider main container -->
+          <div class="swiper l-results__container">
+            <!-- Additional required wrapper -->
+            <ul class="l-results__container swiper-wrapper">
+              <!-- Slides -->
+              <li class="p-results__item swiper-slide">
+                <a href="" class="p-results__itemLink">
+                  <figure class="p-results__itemFig">
+                    <img src="./assets/img/slide1.png" alt="pcの写真" />
+                  </figure>
+                  <div class="p-results__itemLink--inner">
+                    <h3 class="p-results__item--ttl">
+                      とかくに人の世は住みにくい。
+                    </h3>
+                    <!-- /.results-item-ttl -->
+                    <p class="p-results__item--txt">
+                      どこへ越しても住みにくいと悟った時、詩が生れて
+                      、画が出来る。意地を通せば窮屈だ。
+                    </p>
+                    <!-- /.results-irtem-txt -->
+                  </div>
+                  <!-- /.results-item-inner -->
+                </a>
+              </li>
+              <li class="p-results__item swiper-slide">
+                <a href="" class="p-results__itemLink">
+                  <figure class="p-results__itemFig">
+                    <img src="./assets/img/slide1.png" alt="pcの写真" />
+                  </figure>
+                  <div class="p-results__itemLink--inner">
+                    <h3 class="p-results__item--ttl">
+                      とかくに人の世は住みにくい。
+                    </h3>
+                    <!-- /.results-item-ttl -->
+                    <p class="p-results__item--txt">
+                      どこへ越しても住みにくいと悟った時、詩が生れて
+                      、画が出来る。意地を通せば窮屈だ。
+                    </p>
+                    <!-- /.results-irtem-txt -->
+                  </div>
+                  <!-- /.results-item-inner -->
+                </a>
+              </li>
+              <li class="p-results__item swiper-slide">
+                <a href="" class="p-results__itemLink">
+                  <figure class="p-results__itemFig">
+                    <img src="./assets/img/slide1.png" alt="pcの写真" />
+                  </figure>
+                  <div class="p-results__itemLink--inner">
+                    <h3 class="p-results__item--ttl">
+                      とかくに人の世は住みにくい。
+                    </h3>
+                    <!-- /.results-item-ttl -->
+                    <p class="p-results__item--txt">
+                      どこへ越しても住みにくいと悟った時、詩が生れて
+                      、画が出来る。意地を通せば窮屈だ。
+                    </p>
+                    <!-- /.results-irtem-txt -->
+                  </div>
+                  <!-- /.results-item-inner -->
+                </a>
+              </li>
+              <li class="p-results__item swiper-slide">
+                <a href="" class="p-results__itemLink">
+                  <figure class="p-results__itemFig">
+                    <img src="./assets/img/slide1.png" alt="pcの写真" />
+                  </figure>
+                  <div class="p-results__itemLink--inner">
+                    <h3 class="p-results__item--ttl">
+                      とかくに人の世は住みにくい。
+                    </h3>
+                    <!-- /.results-item-ttl -->
+                    <p class="p-results__item--txt">
+                      どこへ越しても住みにくいと悟った時、詩が生れて
+                      、画が出来る。意地を通せば窮屈だ。
+                    </p>
+                    <!-- /.results-irtem-txt -->
+                  </div>
+                  <!-- /.results-item-inner -->
+                </a>
+              </li>
+              <li class="p-results__item swiper-slide">
+                <a href="" class="p-results__itemLink">
+                  <figure class="p-results__itemFig">
+                    <img src="./assets/img/slide1.png" alt="pcの写真" />
+                  </figure>
+                  <div class="p-results__itemLink--inner">
+                    <h3 class="p-results__item--ttl">
+                      とかくに人の世は住みにくい。
+                    </h3>
+                    <!-- /.results-item-ttl -->
+                    <p class="p-results__item--txt">
+                      どこへ越しても住みにくいと悟った時、詩が生れて
+                      、画が出来る。意地を通せば窮屈だ。
+                    </p>
+                    <!-- /.results-irtem-txt -->
+                  </div>
+                  <!-- /.results-item-inner -->
+                </a>
+              </li>
+              <li class="p-results__item swiper-slide">
+                <a href="" class="p-results__itemLink">
+                  <figure class="p-results__itemFig">
+                    <img src="./assets/img/slide1.png" alt="pcの写真" />
+                  </figure>
+                  <div class="p-results__itemLink--inner">
+                    <h3 class="p-results__item--ttl">
+                      とかくに人の世は住みにくい。
+                    </h3>
+                    <!-- /.results-item-ttl -->
+                    <p class="p-results__item--txt">
+                      どこへ越しても住みにくいと悟った時、詩が生れて
+                      、画が出来る。意地を通せば窮屈だ。
+                    </p>
+                    <!-- /.results-irtem-txt -->
+                  </div>
+                  <!-- /.results-item-inner -->
+                </a>
+              </li>
+              
+              ...
+            </ul>
+          </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination results-pagination"></div>
+            <div class="results-btn-wrapper util-wrapper-btn">
+              <a href="" class="results-btn"> VIEW ALL </a>
+              <!-- /.results-btn -->
+            </div>
+            <!-- /.util-link -->
+        </section>
+
+        <!-- /.results -->
+
+
+        <section class="l-price" id="price">
+          <div class="c-price__ttl">Price</div>
+          <!-- /.price-ttl -->
+          <div class="l-price__inner">
+            <tbody>
+              <table class="p-price__table">
+                <tr class="p-price_items">
+                  <th class="p-price__ttl">row 1</th>
+                  <td class="p-price__txt">Price ¥10,000</td>
+                </tr>
+                <tr class="p-price_items">
+                  <th class="p-price__ttl">row 2</th>
+                  <td class="p-price__txt">Price ¥10,000</td>
+                </tr>
+                <tr class="p-price_items"> 
+                  <th class="p-price__ttl">row 3</th>
+                  <td class="p-price__txt">Price ¥10,000</td>
+                </tr>
+              </table>
+            </tbody>
+            <div class="p-price__des">※ 上記料金はサンプルです。</div>
+            <!-- /.price-txt -->
+          </div>
+          <!-- /.price-inner -->
+        </section>
+        <!-- /.price -->
+
+        <div class="l-bg-wrapper">
+          <section id="comments" class="l-comments">
+            <div class="l-comments__inner">
+              <div class="p-comments__box">
+                <h2 class="c-comments__ttl ">Comments</h2>
+                <ul class="p-comments__list">
+                  <li class="p-comments__item">
+                    どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。
+                  </li>
+                  <li class="p-comments__item">
+                    どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。
+                  </li>
+                </ul>
+              </div>
+              <figure class="p-comments__fig">
+                <img src="./assets/img/comments00003.png" alt="四人の男女が吹き出しのパネルを掲げている様子" />
+              </figure>
+            </div>
+          </section>
+          <!-- /.comments -->
+
+          <section class="l-faq" id="faqs">
+            <h2 class="c-faq__ttl">Q&A</h2>
+            <div class="p-faq__inner">
+              <dl class="p-faq__list">
+                <div class="p-faq__item">
+                  <dt class="p-faq__item-header__ttl p-faq__item--parent js-faq">
+                    <p class="que">  質問質問質問？</p>
+                  
+                    <!-- /.faq-item-headertxt -->
+                  </dt>
+                  <!-- /.faq-item-ttl -->
+                  <dd class="p-faq__item-body__ttl p-faq__item--child js-faqA">
+                      回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答
+                    
+                  </dd>
+                </div>
+                <!-- /.faq-item -->
+                <div class="p-faq__item js-faq">
+                  <dt class="p-faq__item-header__ttl p-faq__item--parent js-faq">
+                    <p class="que"> 質問質問質問？ <br> また、質問は質問質問？</p>
+                    <!-- /.faq-item-headertxt -->
+                  </dt>
+                  <!-- /.faq-item-ttl -->
+                  <dd class="p-faq__item-body__ttl p-faq__item--child js-faqA">
+                      回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答
+                    
+                  </dd>
+                </div>
+                <!-- /.faq-item -->
+                <div class="p-faq__item js-faq">
+                  <dt class="p-faq__item-header__ttl p-faq__item--parent">
+                    <p class="que"> 質問質問質問？</p>
+                    <!-- /.faq-item-headertxt -->
+                  </dt>
+                  <!-- /.faq-item-ttl -->
+                  <dd class="p-faq__item-body__ttl p-faq__item--child">
+                    
+                      回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答
+                  
+                  </dd>
+                </div>
+                <!-- /.faq-item -->
+                <div class="p-faq__item js-faq">
+                  <dt class="p-faq__item-header__ttl p-faq__item--parent">
+                    <p class="que"> 質問質問質問？</p>
+      
+                    <!-- /.faq-item-headertxt -->
+                  </dt>
+                  <!-- /.faq-item-ttl -->
+                  <dd class="p-faq__item-body__ttl p-faq__item--child">
+                      回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答
+                  
+                  </dd>
+                </div>
+                <!-- /.faq-item -->
+                <div class="p-faq__item js-faq">
+                  <dt class="p-faq__item-header__ttl p-faq__item--parent">
+                    <p class="que">質問質問質問？</p>
+                    <!-- /.faq-item-headertxt -->
+                  </dt>
+                  <!-- /.faq-item-ttl -->
+                  <dd class="p-faq__item-body__ttl p-faq__item--child">
+                  
+                      回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答
+                  </dd>
+                </div>
+                <!-- /.faq-item -->
+                <div class="p-faq__item js-faq">
+                  <dt class="p-faq__item-header__ttl p-faq__item--parent">
+                    <p class="que">質問質問質問？</p>
+          
+                    <!-- /.faq-item-headertxt -->
+                  </dt>
+                  <!-- /.faq-item-ttl -->
+                  <dd class="p-faq__item-body__ttl p-faq__item--child">
+                      回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答
+                  </dd>
+                </div>
+                <!-- /.faq-item -->
+              </dl>
+              <!-- /.faq-list -->
+            </div>
+            <!-- /.faq-inner -->
+
+            <!-- /.faq -->
+          </section>
+          <!-- /.QA -->
+
+          <section class="l-access" id="access">
+            <div class="l-access__inner">
+              <div class="l-access__box--left">
+                <h2 class="c-access__ttl">Access</h2>
+                <!-- /.access-ttl -->
+                <p class="p-access__txt">
+                  〒106-6126 <br />
+                  東京都港区六本木 6丁目 10-1 <br />六本木ヒルズ森タワー
+                </p>
+                <!-- /.access-txt -->
+              </div>
+              <!-- /.aceess-box-left -->
+            </div>
+            <div class="l-iframe-wrap l-access__box--right">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.680495926738!2d139.7278880149947!3d35.66024273873076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b771049dc33%3A0x5bfe0248594cc802!2z5YWt5pys5pyo44OS44Or44K6!5e0!3m2!1sja!2sjp!4v1675380206451!5m2!1sja!2sjp"
+                width="800"
+                height="600"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <!-- /.aceess-box-left -->
+            <div class="l-access__btn--wrapper util-wrapper-btn">
+              <a href="#" class="c-access__btn"> Google Maps </a>
+            </div>
+            <!-- /.access-inner -->
+          </section>
+          <!-- /.access -->
+        </div>
+        <!-- /.bg-wrapper -->
+
+        <section id="contact" class="l-contact" >
+          <div class="l-contact__inner">
+            <div class="p-contact__header">
+              <div class="l-contact__header--inner">
+                <h2 class="util-ttl c-contact__ttl">Contact Us</h2>
+                <p class="p-contact__header--txt">
+                  どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。
+                </p>
+              </div>
+            </div>
+            <div class="l-contact-content">
+              <form method="post" id="js-contact-form">
+                <dl class="l-contact__list">
+                  <div class="p-contact__item">
+                    <dt class="p-contact__item--ttl">お問い合わせ種別</dt>
+                    <dd class="p-contact__content p-contact__select-box">
+                      <select name="form-select" id="form-select" class="">
+                        <option value="-" selected>選択してください</option>
+                        <option value="A" >A</option>
+                        <option value="B">B</option>
+                      </select>
+                    </dd>
+                  </div>
+                  <div class="p-contact__item">
+                    <dt class="p-contact__item--ttl">
+                      氏名<span class="p-contact__requireLabel">必須</span>
+                    </dt>
+                    <dd class="p-contact__content">
+                      <input
+                        class="js-require"
+                        type="text"
+                        placeholder="氏名"
+                      />
+                      <span class="contact-focusLine"></span>
+                    </dd>
+                  </div>
+                  <div class="p-contact__item">
+                    <dt class="p-contact__item--ttl">
+                      フリガナ<span class="p-contact__requireLabel">必須</span>
+                    </dt>
+                    <dd class="p-contact__content">
+                      <input
+                        class="js-require"
+                        type="text"
+                        id="js-formKana"
+                        placeholder="フリガナ"
+                      />
+                      <span class="contact-focusLine"></span>
+                    </dd>
+                  </div>
+                  <div class="p-contact__item">
+                    <dt class="p-contact__item--ttl">メールアドレス</dt>
+                    <dd class="p-contact__content">
+                      <input
+                        type="email"
+                        id="form-email"
+                        placeholder="sample@gmail.com"
+                      />
+                      <span class="contact-focusLine"></span>
+                    </dd>
+                  </div>
+                  <div class="p-contact__item p-contact__item--radio">
+                    <dt class="p-contact__item--ttl">性別</dt>
+                    <dd class="p-contact__content">
+                      <div class="p-contact__radio">
+                        <input
+                          type="radio"
+                          value="男"
+                          id="radio-male"
+                          checked
+                        />
+                        <label for="radio-male" class="p-contact__radioLabel"
+                          >男性</label
+                        >
+                      </div>
+                      <div class="p-contact__radio">
+                        <input
+                          type="radio"
+                          value="女"
+                          id="radio-female"
+                        />
+                        <label for="radio-female" class="p-contact__radioLabel"
+                          >女性</label
+                        >
+                      </div>
+                    </dd>
+                  </div>
+                  <div class="p-contact__item p-contact__item--message mod-message">
+                    <dt class="p-contact__item--ttl">メッセージ</dt>
+                    <dd>
+                      <textarea></textarea>
+                    </dd>
+                  </div>
+                </dl>
+                <div class="p-contact__privacy">
+                  <input type="checkbox" name="" id="form-privacy" />
+                  <label for="form-privacy" class="p-contact__privacyLabel">
+                    個人情報保護方針に同意する
+                  </label>
+                </div>
+                <div class="l-contact__button--wrap">
+                  <button id="form-submit" class="c-contact__button" disabled>
+                    送信する
+                  </button>
+                </div>
+              
+        </form>
+
+
+            </div>
+          </div>
+        </section>
+        <!-- /.contact -->
+      </main>
+      <!-- /.main -->
+
+      <footer class="l-footer">
+
+        <button href="" class="c-top__link" id="to_top"></button>
+        <!-- /.top-link -->
+        <div class="l-footer__inner">
+          <div class="l-footer__left">
+            <div class="p-footer__icon--content">
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-square-facebook"></i>
+            </div>
+            <!-- /.footer-icon-content -->
+            <a class="p-footer__txt--content">
+              <p class="p-footer__txt">サイトマップ</p>
+              <p class="p-footer__txt">個人情報保護方針</p>
+              <p class="p-footer__txt">プライバシーポリシー</p>
+              <!-- / -->
+            </a>
+            <!-- /.footer-txt-content -->
+          </div>
+          <!-- /.footer-left -->
+
+          <div class="p-footer__right">
+            <div class="p-footer__logo">Sample Corp.</div>
+            <!-- /.footer-logo -->
+
+            <small class="small">© デイトラ Landing page Sample.</small>
+          </div>
+          <!-- /.footer-right -->
+        </div>
+        <!-- /.footer-inner -->
+      </footer>
+      <!-- /.footer -->
+    </div>
+    <!-- /.wrapper -->
+
+    <!-- jqueryの記述 -->
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      defer></script>
+    <script src="./assets/js/swiper.min.js" defer></script>
+    <script src="./assets/js/script.js" defer></script>
+  </body>
+</html>

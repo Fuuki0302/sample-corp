@@ -1,0 +1,122 @@
+@use  "../global" as global;
+
+
+.c-content__ttl{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: global.$font-ja;
+    line-height: 1.45;
+    
+    @include global.mq('pc') {
+        font-size: 33px;
+        color: #333;
+        letter-spacing: 0.02px;
+        font-family: global.$font-ja;
+        line-height: 1.45;
+    }
+
+}
+
+.c-content__txt{
+    margin-top: 24px;
+    color: #3E3E3E;
+    font-family: global.$font-ja;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.45;
+
+    @include global.mq('pc') {
+    margin-top: 29px;
+    letter-spacing: 0.45px;
+    font-size: 18px;
+    line-height: 1.45;
+    }
+
+}
+
+
+.c-price__ttl{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    color: #3E3E3E;
+    font-family: global.$font-en;
+
+    @include global.mq('sp') {
+        font-size: 30px;
+    }
+}
+
+.c-access__ttl{
+    font-size: 30px;
+    color: #fff;
+    font-family: global.$font-en;
+    font-weight: 600;
+    text-align: left;
+
+    @include global.mq('pc') {
+    font-size: 36px;
+    }
+
+}
+
+
+.c-news__ttl{
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    font-family: global.$font-en;
+    line-height: 1.45;
+
+    @include global.mq('sp') {
+        font-size: 30px;
+        font-family: global.$font-en;
+        line-height: 1.45;
+    }
+
+}
+
+
+
+.c-faq__ttl{
+    font-size: 36px;
+    font-weight: 600;
+    color: #3e3e3e;
+    font-family: global.$font-en;
+    text-align: center;
+
+    @include global.mq('sp') {
+        font-size: 30px;
+    }
+
+}
+
+
+
+.c-results__ttl{
+    color: #fff;
+    font-size: 36px;
+    font-weight: 600;
+    font-family: global.$font-en;
+
+        @include global.mq('sp') {
+            text-align: center;
+            padding-right: 16px;
+            font-size: 30px;
+
+        }
+
+}
+
+
+.c-comments__ttl{
+    font-size: 36px;
+    font-weight: 600;
+    color: #3E3E3E;
+    font-family: global.$font-en;
+
+    @include global.mq('sp') {
+        font-size: 30px;
+    }
+
+}

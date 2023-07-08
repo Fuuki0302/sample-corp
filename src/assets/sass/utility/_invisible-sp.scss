@@ -1,0 +1,16 @@
+@use  "../global" as global;
+.is-sp {
+    display: none;
+}
+
+
+@include global.mq('sp') {
+    .is-pc {
+        display: none;
+    }
+    .is-sp {
+        display: block;
+    }
+}
+    
+    

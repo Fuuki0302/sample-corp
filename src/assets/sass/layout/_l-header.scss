@@ -1,0 +1,258 @@
+@use  "../global" as global;
+
+
+/* header
+
+====================================================*/
+.l-wrapper {
+    background-color: #F3F3F3;
+
+}
+
+.l-header{
+
+    @include global.mq('pc') {
+    background: rgba(255,255,255,0.1);
+    height: 83px;
+    }
+    background:rgba(255,255,255,0.8);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    font-size: 16px;
+    z-index: 5;
+    height: 68px;
+
+
+}
+
+.l-header__inner{
+
+    @include global.mq('sp') {
+        display: flex;
+    }
+    @include global.mq('pc') {
+        max-width: 1200px;
+        margin-right: auto;
+        margin-left: auto;
+        padding:  0px 17px;
+
+    }
+
+}
+
+.c-header__ttl{
+
+    @include global.mq('pc') {
+        display: none;
+    }
+    font-size: 23px;
+    font-family: global.$font-en;
+    font-weight: 700;
+    height: 68px;
+    padding: 17px 15px;
+    color: #3e3e3e;
+
+}
+
+
+/* drawer 中身
+
+====================================================*/
+.l-drawer{
+    @include global.mq('sp') {
+        width: 70%;
+        left: 100%;
+        top: -68px;
+        height: 100vh;
+        z-index: 9;
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        background: #fff;
+        position: relative;
+    }
+
+}
+.l-drawer.is-active {
+    left: 30%;
+    color: #fff;
+}
+
+.l-drawer__nav--list{
+    @include global.mq('pc') {
+        display: flex;
+        justify-content: center;
+        font-weight: 500;
+    }
+
+    @include global.mq('sp') {
+        padding: 80px;
+        text-align: center; 
+    }
+
+
+}
+
+
+.p-nav__item{
+    font-family: global.$font-en;
+
+    @include global.mq('pc') {
+        text-decoration: none;
+        margin-right: 40px;
+        height: 80px;
+        line-height: 80px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    @include global.mq('sp') {
+        
+        & + &  {
+            margin-top: 40px;
+        }
+
+    }
+}
+
+.p-nav__item--link{
+    @include global.mq('pc') {
+        color: #333;
+        letter-spacing: -.025em;
+        position: relative; 
+        &::after {
+        position: absolute;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 1px;
+        background: #000000;
+        bottom: -5px; 
+        transform: scale(0, 1);
+        transform-origin: center top;
+        transition: transform 0.3s;
+        }
+    }
+
+    @include global.mq('sp') {
+        display: block;
+        font-size: 18px;
+        font-weight: 500;
+        color: #3e3e3e;
+        text-align: center;
+
+
+    }
+
+
+    
+    &:hover::after {
+    transform: scale(1, 1);
+    }
+}
+
+
+/* global navigation
+
+====================================================*/
+.l-global__nav{
+    position: absolute;
+    left: -30px;
+    top: 17px;
+    @include global.mq('pc') {
+        display: none;
+    }
+
+}
+
+.p-nav__btn{
+    width: 25px;
+    height: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent;
+    outline: none;
+    border: none;
+    position: relative;
+
+}
+
+.p-header__inline{
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: #3e3e3e;
+    position: absolute;
+    right: 10px;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+
+}
+.p-header__inline.is-active{
+    background-color: #fff;
+}
+
+
+.l-header .p-nav__btn .p-header__inline:first-child {
+    top: 0;
+}
+.l-header .p-nav__btn .p-header__inline:nth-child(2) {
+top: 0;
+bottom: 0;
+margin: auto;
+}
+.l-header .p-nav__btn .p-header__inline:last-child {
+bottom: 0;
+}
+
+
+/* バツボタン
+
+====================================================*/
+
+.p-header__inline.is-active:first-child {
+top:4px ;
+transform: rotate(45deg);
+}
+
+.p-header__inline.is-active:nth-child(2) {
+opacity: 0;
+}
+
+.p-header__inline.is-active:last-child {
+transform: rotate(-45deg);
+}
+
+
+.p-header__inline.is-active {
+top: 0;
+bottom: 0;
+margin: auto;
+transition: transform 0.3s ease;
+}
+
+
+
+/* overlay
+
+====================================================*/
+
+.l-js__overlay{
+    background: rgba(0, 0, 0, 0.7);
+    bottom: 0;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    -webkit-transition: .3s;
+    transition: .3s;
+    visibility: hidden;
+    width: 100%;
+}
+
+
+.l-js__overlay.is-active {
+    opacity: 1;
+    visibility: visible;
+
+} 

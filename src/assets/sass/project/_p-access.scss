@@ -1,0 +1,19 @@
+@use  "../global" as global;
+
+
+.p-access__txt{
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 30px;
+    font-family: global.$font-en;
+    text-align: left;
+    color: #fff;
+    letter-spacing: 0.01em;
+    line-height: 1.45;
+
+
+    @include global.mq('pc') {
+    margin-top: 40px;
+    }
+
+}

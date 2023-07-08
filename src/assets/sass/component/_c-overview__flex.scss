@@ -1,0 +1,15 @@
+@use  "../global" as global;
+
+.c-overview__flex {
+    @include global.mq('pc') {
+        display: flex;
+        padding-top: 120px;
+        width: 100%;
+      }
+    
+      @include global.mq('tab') {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+      }
+}

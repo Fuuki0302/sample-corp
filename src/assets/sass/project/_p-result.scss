@@ -1,0 +1,55 @@
+@use  "../global" as global;
+
+
+.p-results__itemLink{
+    background: #fff;
+    color: #3e3e3e;
+    display: block;
+
+    @include global.mq('pc') {
+        transition: opacity .2s;
+
+        &:hover {
+            opacity: .7;
+        }
+    }
+
+}
+
+.p-results__itemFig{
+    img {
+		width: 100%;
+	}
+}
+
+.p-results__itemLink--inner{
+    padding: 12px 16px 20px;
+
+    @include global.mq('sp') {
+        padding: 12px 13px 8px;
+    }
+
+}
+
+.p-results__item--ttl{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: global.$font-ja;
+
+    @include global.mq('sp') {
+        font-size: 14px;
+    }
+
+}
+
+.p-results__item--txt{
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 6px;
+    font-family: global.$font-ja;
+
+    @include global.mq('sp') {
+        font-size: 12px;
+    }
+
+}

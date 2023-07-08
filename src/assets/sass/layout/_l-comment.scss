@@ -1,0 +1,28 @@
+@use  "../global" as global;
+
+/* Comments
+
+====================================================*/
+
+.l-comments{
+    margin-top: 116px;
+    position: relative;
+    z-index: 1;
+
+	@include global.mq('sp') {
+		margin: 48px 16px 0;
+	}
+
+}
+
+.l-comments__inner{
+    display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+
+}
+
+

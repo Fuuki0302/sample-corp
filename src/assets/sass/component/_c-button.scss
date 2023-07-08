@@ -1,0 +1,154 @@
+@use  "../global" as global;
+
+
+
+/* TOP ボタン
+
+====================================================*/
+
+.c-contact__btn {
+    font-weight: 700;
+    display: inline-block;
+    text-align: center;
+    margin-top: 40px;
+    background: #FFAA3B;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: #3E3E3E33 0px 3px 5px;
+    width: 282px;
+    height: 50px;
+    line-height: 50px;
+    font-family: global.$font-ja;
+    font-size: 18px;
+
+
+    &:hover {
+        transition: .3s;
+        background: #f18900;
+        
+        
+        
+    }
+    
+    @include global.mq('sp') {
+        font-size: 16px;
+        margin-top: 28px;
+        width: 222px;
+        height: 48px;
+        line-height: 48px;
+
+    }
+
+
+}
+
+
+
+/* Contact ボタン
+
+====================================================*/
+
+
+.c-contact__button{
+    background-color: #ffaa3b;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px rgba(62, 62, 62, 0.2);
+    color: #fff;
+    display: block;
+    font-size: 18px;
+    letter-spacing: .025em;
+    line-height: 48px;
+    height: 48px;
+    text-align: center;
+    transition: background-color .2s;
+    font-weight: bold;
+    font-family: global.$font-ja;
+    
+    @include global.mq('pc') {
+        width: 173px;
+        
+        &:not(:disabled):hover {
+        background-color: #f18900;
+        }
+    }
+
+    @include global.mq('sp') {
+    margin: 30px auto 0;
+    width: 165px;
+    font-size: 16px;
+}
+
+&:disabled {
+    background-color: #b2b2b2;
+}
+}
+
+.contact-message {
+text-align: center;
+margin-top: 60px;
+&.-error {
+    color: #f00;
+}
+}
+
+
+
+/* News ボタン
+
+====================================================*/
+.c-news__btn{
+    display: inline-block;
+    color: #3e3e3e;
+    border: solid 1px #707070;
+    padding: 20px 80px;
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: .4em;
+    font-family: global.$font-en;
+
+
+    &:hover {
+        background: #3e3e3e;
+        color: #fff;
+        transition: .3s;
+    }
+
+}
+
+
+
+/* Access ボタン
+
+====================================================*/
+
+
+
+.c-access__btn{
+    color: #fff;
+    background: #3e3e3e;
+    padding: 16px 40px;
+    display: inline-block;
+    font-size: 20px;
+    letter-spacing: .18em;
+    border:  solid 1px #fff;
+    font-weight: 600;
+    font-family: global.$font-en;
+    &:hover {
+    color: #3e3e3e;
+    background: #fff;
+    transition: .3s;
+
+    }
+
+
+    @include global.mq('pc'){
+    padding: 16px 74px;
+    font-size: 20px;
+    letter-spacing: .2em;
+    }
+
+}
+
+
+

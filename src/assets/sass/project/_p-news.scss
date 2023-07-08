@@ -1,0 +1,129 @@
+@use  "../global" as global;
+
+
+.p-news__list--item{
+    @include global.mq('sp') {
+        padding: 10px 0px;
+    }
+
+    border-bottom: solid 2px #f0f0f0;
+    font-size: 18px;
+
+}
+
+.p-news-item--link{
+    align-items: center;
+    color: #3e3e3e;
+    letter-spacing: .025em;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+
+
+    @include global.mq('pc') {
+        display: flex;
+    }
+
+    &:hover {
+        background: #4973FF33;
+        transition: .3s;
+    }
+
+
+
+    @include global.mq('pc') {
+        display: wrap;
+    }
+
+    &:after {
+        position: absolute;
+        content: "";
+        display: block;
+        border-right: solid 3px #3e3e3e;
+        border-top: solid 3px #3e3e3e;
+        right: 18px;
+        top: 50%;
+        transform: translateY(-50%) rotate(45deg);
+        width: 15px;
+        height: 15px;
+        -webkit-transform: translateY(-50%) rotate(45deg);
+
+        @include global.mq('sp') {
+            right: 15px;
+
+        }
+    }
+
+
+    @include global.mq('pc') {
+
+        padding: 32px 85px 37px 12px;
+    
+        &:after {
+            right: 30px;
+        }
+    }
+
+}
+
+.p-news__item--date{
+    font-family: global.$font-en;
+    white-space: nowrap;
+    font-weight: 400;
+    font-size: 18px;
+
+    @include global.mq('sp') {
+        font-size: 14px;
+    }
+
+}
+
+.p-news__item--ttl{
+    background: #fff;
+    border: solid 2px #4973ff;
+    border-radius: 30px;
+    display: inline-block;
+    font-size: 12px;
+    margin-left: 38px;
+    white-space: nowrap;
+    padding: 4px 16px;
+    font-family: global.$font-ja;
+    line-height: 1.45;
+
+    @include global.mq("pc") {
+        font-size: 14px;
+    }
+
+    @include global.mq('sp') {
+        margin-left: 19px;
+        padding: 0px 13px;
+    }
+
+}
+
+.p-news__item--txt{
+    letter-spacing: 0.025em;
+    margin-top: 12px;
+    line-height: 1.45;
+    font-family: global.$font-ja;
+
+    @include global.mq('sp') {
+    font-size: 14px;
+    margin: 3px 50px 0 0;
+    line-height: 1.45;
+    }
+
+    @include global.mq('pc') {
+    line-height: 1.6;
+    margin-left: 40px;
+    margin: 0px 20px 0 40px
+    
+    }
+
+}
+
+
+.p-news__btn--wrap{
+    text-align: center;
+
+}
